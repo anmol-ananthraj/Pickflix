@@ -696,7 +696,7 @@ function TvDetail() {
           </div>
 
           <p className="font-body text-[10px] font-bold uppercase tracking-[0.3em] text-on-surface/20 text-center">
-            © 2026 Pickflix. The Digital Projectionist.
+            © 2026 Pickflix. The Movie Discovery Platform.
           </p>
 
         </div>
