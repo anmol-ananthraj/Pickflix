@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL =  import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
 
 export async function getTrendingMovies() {
   try {
@@ -142,7 +142,7 @@ export async function getTvDetails(tvId) {
 export async function getOmdbDetails(imdbId) {
   try {
     const res = await fetch(
-      `http://localhost:5000/api/omdb/${encodeURIComponent(imdbId)}`
+      `${API_BASE_URL}/omdb/${encodeURIComponent(imdbId)}`
     );
 
     if (!res.ok) {
